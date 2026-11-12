@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A responsive editorial image gallery with 24 photographs, filters and a lightbox viewer.">
+<title>FRAME — A Visual Journal</title>
+<link rel="preconnect" href="https://images.unsplash.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="#"><span class="brand-mark">F</span> FRAME<span class="brand-dot">.</span></a>
+<span class="header-note"><b></b> AN OPEN COLLECTION OF MOMENTS</span>
+<a class="header-link" href="#gallery">EXPLORE THE GALLERY ↘</a>
+</header>
+<main class="page-shell">
+<section class="hero">
+<div class="hero-copy">
+<p class="eyebrow">01 / THE VISUAL JOURNAL</p>
+<h1>See the world<br><em>in a different light.</em></h1>
+<p class="intro-copy">Twenty-four photographs. Three little worlds. A collection of places, textures and moments worth remembering. Take your time — there is beauty in every frame.</p>
+<a class="hero-cta" href="#gallery">DISCOVER THE COLLECTION <span>↓</span></a>
+</div>
+<div class="hero-art">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=90" alt="Mountain lake reflecting the surrounding landscape">
+<div class="hero-stamp"><small>VOL.</small><strong>01</strong><span>THE OUTDOORS</span></div>
+<p class="hero-caption">FIG. 001 — A QUIET PLACE TO BEGIN</p>
+</div>
+<p class="side-note">COLLECTING BEAUTIFUL THINGS SINCE 2026</p>
+</section>
+<section class="gallery-section" id="gallery">
+<div class="section-heading"><div><p class="eyebrow">02 / THE COLLECTION</p><h2>Find your <em>perspective.</em></h2></div>
+<p class="section-description">Twenty-four frames, three little worlds.<br>Choose a path and explore.</p></div>
+<div class="gallery-toolbar">
+<div class="filter-list" role="group" aria-label="Filter images by category">
+<button class="filter-btn active" data-filter="all" aria-pressed="true">All <span>24</span></button>
+<button class="filter-btn" data-filter="nature" aria-pressed="false">Nature</button>
+<button class="filter-btn" data-filter="architecture" aria-pressed="false">Architecture</button>
+<button class="filter-btn" data-filter="travel" aria-pressed="false">Travel</button>
+</div><p class="photo-count" id="photoCount">24 PHOTOGRAPHS</p>
+</div>
+<div class="gallery-grid" id="galleryGrid">
+<button class="gallery-card" data-category="nature" aria-label="Open Above the clouds photograph">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85" alt="Misty mountain peaks" loading="lazy">
+<span class="card-number">01</span>
+<span class="card-overlay"><span>nature</span><strong>Above the clouds</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open Quiet geometry photograph">
+<img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85" alt="Minimal modern architecture" loading="lazy">
+<span class="card-number">02</span>
+<span class="card-overlay"><span>architecture</span><strong>Quiet geometry</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open By the blue photograph">
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85" alt="Colorful coastal village" loading="lazy">
+<span class="card-number">03</span>
+<span class="card-overlay"><span>travel</span><strong>By the blue</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open Into the woods photograph">
+<img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=85" alt="Sunlight through a green forest" loading="lazy">
+<span class="card-number">04</span>
+<span class="card-overlay"><span>nature</span><strong>Into the woods</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Where the sea begins photograph">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85" alt="Ocean waves at the shore" loading="lazy">
+<span class="card-number">05</span>
+<span class="card-overlay"><span>travel</span><strong>Where the sea begins</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open Lines and light photograph">
+<img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85" alt="Architectural lines and curves" loading="lazy">
+<span class="card-number">06</span>
+<span class="card-overlay"><span>architecture</span><strong>Lines and light</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open Small wonders photograph">
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85" alt="Pink flowers in bloom" loading="lazy">
+<span class="card-number">07</span>
+<span class="card-overlay"><span>nature</span><strong>Small wonders</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Golden silence photograph">
+<img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=85" alt="Golden desert dunes" loading="lazy">
+<span class="card-number">08</span>
+<span class="card-overlay"><span>travel</span><strong>Golden silence</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open City rhythm photograph">
+<img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85" alt="City skyline at dusk" loading="lazy">
+<span class="card-number">09</span>
+<span class="card-overlay"><span>architecture</span><strong>City rhythm</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open Still waters photograph">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Mountain lake reflection" loading="lazy">
+<span class="card-number">10</span>
+<span class="card-overlay"><span>nature</span><strong>Still waters</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open The long way photograph">
+<img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1000&q=85" alt="Road through mountain landscape" loading="lazy">
+<span class="card-number">11</span>
+<span class="card-overlay"><span>travel</span><strong>The long way</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open At home in calm photograph">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Warm minimalist interior" loading="lazy">
+<span class="card-number">12</span>
+<span class="card-overlay"><span>architecture</span><strong>At home in calm</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open First light photograph">
+<img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=85" alt="Golden sunrise over a field" loading="lazy">
+<span class="card-number">13</span>
+<span class="card-overlay"><span>nature</span><strong>First light</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Open horizons photograph">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="Scenic mountain valley" loading="lazy">
+<span class="card-number">14</span>
+<span class="card-overlay"><span>travel</span><strong>Open horizons</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open Modern lines photograph">
+<img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1000&q=85" alt="Sculptural building facade" loading="lazy">
+<span class="card-number">15</span>
+<span class="card-overlay"><span>architecture</span><strong>Modern lines</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open Wild and free photograph">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=85" alt="Lake and mountain landscape" loading="lazy">
+<span class="card-number">16</span>
+<span class="card-overlay"><span>nature</span><strong>Wild and free</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Somewhere new photograph">
+<img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85" alt="Traveler overlooking a landscape" loading="lazy">
+<span class="card-number">17</span>
+<span class="card-overlay"><span>travel</span><strong>Somewhere new</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open Forest stories photograph">
+<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1000&q=85" alt="Tall trees in woodland" loading="lazy">
+<span class="card-number">18</span>
+<span class="card-overlay"><span>nature</span><strong>Forest stories</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Paris mornings photograph">
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1000&q=85" alt="European city street" loading="lazy">
+<span class="card-number">19</span>
+<span class="card-overlay"><span>travel</span><strong>Paris mornings</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open A slower space photograph">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Contemporary home interior" loading="lazy">
+<span class="card-number">20</span>
+<span class="card-overlay"><span>architecture</span><strong>A slower space</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="nature" aria-label="Open Green escape photograph">
+<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1000&q=85" alt="Rolling green hills" loading="lazy">
+<span class="card-number">21</span>
+<span class="card-overlay"><span>nature</span><strong>Green escape</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Blue beyond photograph">
+<img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=85" alt="Deep blue ocean waves" loading="lazy">
+<span class="card-number">22</span>
+<span class="card-overlay"><span>travel</span><strong>Blue beyond</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="architecture" aria-label="Open Natural balance photograph">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Bright modern interior" loading="lazy">
+<span class="card-number">23</span>
+<span class="card-overlay"><span>architecture</span><strong>Natural balance</strong><i>View photograph ↗</i></span>
+</button>
+<button class="gallery-card" data-category="travel" aria-label="Open Wander often photograph">
+<img src="https://images.unsplash.com/photo-1500534623283-312aaderf2a?auto=format&fit=crop&w=1000&q=85" alt="A scenic travel destination" loading="lazy">
+<span class="card-number">24</span>
+<span class="card-overlay"><span>travel</span><strong>Wander often</strong><i>View photograph ↗</i></span>
+</button>
+</div>
+<p class="empty-state" id="emptyState" hidden>No photographs in this category yet.</p>
+<div class="gallery-end"><span></span><p>YOU'VE REACHED THE END OF THE COLLECTION</p><span></span></div>
+</section>
+</main>
+<footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark">F</span> FRAME<span class="brand-dot">.</span></a>
+<span>© 2026 FRAME VISUAL JOURNAL</span><span>MADE TO CELEBRATE THE LITTLE THINGS.</span></footer>
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+<button class="lightbox-close" id="closeLightbox" aria-label="Close image viewer">×</button>
+<button class="lightbox-arrow previous" id="prevImage" aria-label="Previous image">‹</button>
+<figure class="lightbox-figure"><img id="lightboxImage" src="" alt="">
+<figcaption><span id="lightboxCategory"></span><strong id="lightboxTitle"></strong><small id="lightboxCounter"></small></figcaption></figure>
+<button class="lightbox-arrow next" id="nextImage" aria-label="Next image">›</button>
+<p class="lightbox-hint">← → TO NAVIGATE &nbsp; · &nbsp; ESC TO CLOSE</p>
+</div>
+</body></html>
