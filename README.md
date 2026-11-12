@@ -1,4 +1,5 @@
 # FRAME — CodeAlpha Image Gallery
+##Live Demo
 **[Image gallery](https://areebashahzadi-dot.github.io/CodeAlpha-image-gallery/)**
 
 A responsive, editorial-style photo gallery built with HTML, CSS and vanilla JavaScript.
